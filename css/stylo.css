@@ -1,0 +1,114 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos de la navbar */
+  
+  #navbar-pinterest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  
+  #navbar-pinterest .finder {
+    margin-left: 20px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  #navbar-pinterest .icons {
+    display: flex;
+  }
+  
+  #navbar-pinterest .icons > div {
+    margin-left: 20px;
+  }
+  
+  #navbar-pinterest .icons > div:last-child {
+    margin-right: 0;
+  }
+  
+  #navbar-pinterest .icons > div > a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  /* Estilos de las imágenes */
+  
+  #content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-image:hover .card-buttons {
+    opacity: 1;
+  }
+  
+  .card-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-buttons > div {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .card-buttons > div:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .card-buttons > div > svg {
+    width: 20px;
+    height:
+  

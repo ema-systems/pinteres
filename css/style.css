@@ -1,0 +1,238 @@
+/* Estilos para la barra de navegación */
+#navbar-pinterest {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.finder {
+  font-size: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 50px;
+  width: 700px;
+  background-color: #F0F2F5;
+  margin: 0 auto;
+}
+
+#notifications,
+#message,
+#profile-img {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.button5 {
+  font-size: 25px;
+  border-radius: 80px;
+  color: white;
+  background-color: black;
+}
+
+.guardar {
+  font-size: 20px;
+  border-radius: 80px;
+  color: white;
+  background-color: rgb(238, 15, 15);
+}
+
+.megusta {
+  font-size: 20px;
+  border-radius: 80px;
+  color: white;
+  background-color: rgb(238, 15, 15);
+  vertical-align: bottom;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+ justify-content: center;
+  
+}
+
+.compartir {
+  font-size: 20px;
+  border-radius: 80px;
+  color: white;
+  background-color: rgb(238, 15, 15);
+  vertical-align: bottom;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+ justify-content: center;
+  
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 5% 3% 5%;
+}
+
+/* Estilos para las tarjetas de imagen */
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 3% 5% 3% 5%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.card-image:nth-child(5),
+.card-image:nth-child(4),
+.card-image:nth-child(3) {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.card-image:nth-child(2),
+.card-image:nth-child(1) {
+  grid-column-end: span 1;
+}
+
+.card-image:hover img {
+  transform: scale(1.1);
+}
+
+.card-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  transform: translateY(50px);
+}
+
+.card-image:hover .card-buttons {
+  transform: translateY(0);
+}
+
+.card-buttons button {
+  background-color: transparent;
+  border: none;
+}
+
+.card-image .botones {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card-image .botones button {
+  margin-top: 5px;
+}
+
+.card-image .botones button:nth-child(2) {
+  margin-top: 15px;
+  align-self: center;
+}
+
+
+.card-image {
+  position: relative;
+}
+
+.card-image .image-container {
+  position: relative;
+}
+
+.card-image .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.card-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  transform: translateY(50px);
+}
+
+.card-image:hover .card-buttons {
+  transform: translateY(0);
+}
+
+.card-buttons button {
+  background-color: transparent;
+  border: none;
+}
+
+.card-image .botones {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card-image .botones2 {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card-image .botones3 {
+  position: absolute;
+  top: 90%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card-image .botones button {
+  margin-top: 5px;
+}
+
+.card-image .botones button:nth-child(2) {
+  margin-top: 15px;
+  align-self: center;
+}
